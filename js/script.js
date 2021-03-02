@@ -1,11 +1,8 @@
 /*L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore.*/
 
 var numero1 = prompt ("inserisci un numero")
-if ( isNaN (km) ) {
-  km = parseInt(prompt ("inserire un numero!"));
+
 var numero2 = prompt ("inserisci un numero")
-if ( isNaN (km) ) {
-  km = parseInt(prompt ("inserire un numero!"));
 
 
 
