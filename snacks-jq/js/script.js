@@ -78,19 +78,21 @@ function getRandom(min,max) {
   return Math.floor(Math.random()*(max - min +1))+ min;
 }
 
-for (var key in squadre) {
-  squadre[key].pFatti = getRandom(1,30);
-  squadre[key].fSubiti = getRandom(1,30);
+for (var i = 0; i < squadre.length; i++) {
 
-  console.log(squadre[key]);
-}
+  squadre[i].pFatti = getRandom(1,30);
+  squadre[i].fSubiti = getRandom(1,30);
+
+  console.log(squadre[i]);
+};
+
 
 // 3 step:
 // // Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 var array2 =[];
 
 for (var key in squadre) {
-  delete squadre[key].nome;
+  delete squadre[key].pFatti;
   array2.push(squadre[key]);
 }
 
